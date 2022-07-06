@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css properties 🎨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="boxShadow">
+    <button class="textShadow" onclick="party.confetti(this)">
+        I am Text with Style 🍛
+    </button>
+
+    <button class="textShadow" onclick="party.sparkles(this)">
+        I am Text with Style 🍛
+    </button>
+</div>
+
+<script>
+    var runButton = document.querySelector(".textShadow");
+    party.confetti(runButton, {
+        count: party.variation.range(20, 40),
+        spread: party.variation.range(100, 200),
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+</body>
+</html>
